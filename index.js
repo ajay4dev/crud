@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use("/users", userRoutes);
 app.use("/tasks", taskRoutes);
 
-app.get("/",requireToken, (req, res) => {
+app.get("/", (req, res) => {
     res.json({
         message: "Api is working"
     });
